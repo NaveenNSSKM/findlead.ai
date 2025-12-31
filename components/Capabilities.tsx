@@ -31,7 +31,7 @@ export default function Capabilities() {
                         </div>
                         <div className="relative w-full h-[180px] mt-6 rounded-xl overflow-hidden">
                             <Image
-                                src="/images/outreachs.png"
+                                src="/images/out.png"
                                 alt="Strategy-Led Outreach"
                                 fill
                                 className="object-contain"

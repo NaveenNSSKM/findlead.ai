@@ -13,7 +13,7 @@ export default function Segments() {
                     {/* Box 1 - Startups (Blue/Purple) */}
                     <div className="relative p-6 rounded-[1.5rem] flex flex-col justify-center h-[200px] shadow-sm overflow-hidden group">
                         <Image
-                            src="/images/bg-card-blue.png"
+                            src="/images/blue-bg.png"
                             alt="Startups Background"
                             fill
                             className="object-cover z-0"
