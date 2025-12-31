@@ -104,10 +104,18 @@ export default function Navbar() {
                             <div className="border-b border-gray-100 pb-4">
                                 <Link href="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
                             </div>
-                            <div className="border-b border-gray-100 pb-4">Product</div>
-                            <div className="border-b border-gray-100 pb-4">Pricing</div>
-                            <div className="border-b border-gray-100 pb-4">Blog</div>
-                            <div className="pb-4">Contact</div>
+                            <div className="border-b border-gray-100 pb-4">
+                                <Link href="#" onClick={() => setIsMenuOpen(false)}>Product</Link>
+                            </div>
+                            <div className="border-b border-gray-100 pb-4">
+                                <Link href="/pricing" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
+                            </div>
+                            <div className="border-b border-gray-100 pb-4">
+                                <Link href="#" onClick={() => setIsMenuOpen(false)}>Blog</Link>
+                            </div>
+                            <div className="pb-4">
+                                <Link href="#" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
