@@ -43,6 +43,7 @@ export default function Hero() {
                         priority
                         className="object-contain object-top lg:object-right"
                         sizes="(max-width: 1024px) 100vw, 34vw"
+                        style={{ objectFit: 'contain' }}
                     />
                 </div>
             </div>
