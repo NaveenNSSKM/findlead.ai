@@ -15,7 +15,7 @@ export default function Footer() {
                         height={40}
                         className="h-6 w-auto object-contain"
                     />
-                    <span>© 2025. All rights reserved.</span>
+                    <span>© 2026. All rights reserved.</span>
                 </div>
 
                 {/* Right Side: Links */}

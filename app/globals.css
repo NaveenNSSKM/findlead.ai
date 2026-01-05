@@ -46,3 +46,113 @@ h5,
 h6 {
   font-family: var(--font-clash);
 }
+
+/* Infinite Scroll Animation for Testimonials */
+@keyframes infinite-scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 20s linear infinite;
+}
+
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Clapping Hands Bounce Animation */
+@keyframes clap-bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Individual clap animations with staggered timing */
+.animate-clap-1 {
+  animation: clap-bounce 2s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.animate-clap-2 {
+  animation: clap-bounce 2s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.animate-clap-3 {
+  animation: clap-bounce 2s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+.animate-clap-4 {
+  animation: clap-bounce 2s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+
+  .animate-clap-1,
+  .animate-clap-2,
+  .animate-clap-3,
+  .animate-clap-4 {
+    animation: none;
+  }
+}
+
+/* Energetic Clapping Animation for Hover/Click */
+@keyframes clap-energetic {
+
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  25% {
+    transform: translateY(-20px) scale(1.1) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateY(-25px) scale(1.15);
+  }
+
+  75% {
+    transform: translateY(-20px) scale(1.1) rotate(5deg);
+  }
+}
+
+/* Group hover effect for CTA section */
+.cta-hover-group:hover .animate-clap-1,
+.cta-hover-group:hover .animate-clap-2,
+.cta-hover-group:hover .animate-clap-3,
+.cta-hover-group:hover .animate-clap-4 {
+  animation: clap-energetic 0.6s ease-in-out infinite;
+}
+
+/* Stagger the energetic animation */
+.cta-hover-group:hover .animate-clap-1 {
+  animation-delay: 0s;
+}
+
+.cta-hover-group:hover .animate-clap-2 {
+  animation-delay: 0.1s;
+}
+
+.cta-hover-group:hover .animate-clap-3 {
+  animation-delay: 0.2s;
+}
+
+.cta-hover-group:hover .animate-clap-4 {
+  animation-delay: 0.3s;
+}

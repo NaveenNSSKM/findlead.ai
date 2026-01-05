@@ -7,7 +7,7 @@ export default function Intelligence() {
                 <div>
                     <h2 className="text-3xl md:text-5xl font-heading font-semibold mb-12 leading-tight text-black">
                         Strategic Intelligence. <br />
-                        <span className="text-gray-400">Not Just Automation.</span>
+                        <span className="text-gray-500">Not Just Automation.</span>
                     </h2>
                     <ul className="space-y-8">
                         {[

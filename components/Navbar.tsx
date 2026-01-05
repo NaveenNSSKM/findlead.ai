@@ -39,7 +39,8 @@ export default function Navbar() {
                                     alt="FindLead.ai"
                                     width={100}
                                     height={40}
-                                    className="h-6 w-auto object-contain"
+                                    style={{ height: '24px', width: 'auto' }}
+                                    className="object-contain"
                                     priority
                                 />
                             </Link>
@@ -48,6 +49,7 @@ export default function Navbar() {
                             <button
                                 onClick={() => setIsMenuOpen(true)}
                                 className="lg:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8 p-1"
+                                aria-label="Toggle menu"
                             >
                                 <span className="block w-6 h-[2px] bg-[#00358E] rounded-full"></span>
                                 <span className="block w-6 h-[2px] bg-[#00358E] rounded-full"></span>
@@ -85,7 +87,8 @@ export default function Navbar() {
                                     alt="FindLead.ai"
                                     width={140}
                                     height={36}
-                                    className="h-7 w-auto object-contain"
+                                    style={{ height: '28px', width: 'auto' }}
+                                    className="object-contain"
                                 />
                             </Link>
                             <button
