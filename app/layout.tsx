@@ -24,6 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://api.fontshare.com" />
+        <link rel="preconnect" href="https://cdn.fontshare.com" crossOrigin="anonymous" />
         <link href="https://api.fontshare.com/v2/css?f%5B%5D=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
       </head>
       <body
@@ -31,6 +33,6 @@ export default function RootLayout({
       >
         {children}
       </body>
-    </html>
+    </html >
   );
 }
