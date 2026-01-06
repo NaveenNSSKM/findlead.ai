@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import "./fonts.css";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -25,10 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://cdn.fontshare.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://api.fontshare.com" />
         <link rel="dns-prefetch" href="https://cdn.fontshare.com" />
-        <link rel="dns-prefetch" href="https://api.fontshare.com" />
-        <link href="https://api.fontshare.com/v2/css?f%5B%5D=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
       </head>
       <body
         className={`${openSans.variable} antialiased bg-white text-[#121212] overflow-x-hidden`}
