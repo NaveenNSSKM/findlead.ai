@@ -8,9 +8,8 @@ export default function Hero() {
 
                 {/* ================= LEFT CONTENT ================= */}
                 <div className="relative z-10 flex flex-col items-start pt-12 max-w-[750px]">
-
                     {/* Headline */}
-                    <h1 className="text-5xl md:text-6xl lg:text-[2.4rem] font-extrabold text-[#121212] mb-6">
+                    <h1 className="text-5xl md:text-6xl lg:text-[2.4rem] font-bold text-[#121212] mb-6">
                         <span className="block leading-[1.2]">
                             Hook Your Perfect 100.
                         </span>
@@ -43,6 +42,7 @@ export default function Hero() {
                         priority
                         loading="eager"
                         fetchPriority="high"
+                        decoding="sync"
                         className="object-contain object-top lg:object-right"
                         sizes="(max-width: 1024px) 100vw, 34vw"
                         style={{ objectFit: 'contain' }}
