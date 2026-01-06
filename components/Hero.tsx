@@ -41,6 +41,8 @@ export default function Hero() {
                         alt="Hooking prospects"
                         fill
                         priority
+                        loading="eager"
+                        fetchPriority="high"
                         className="object-contain object-top lg:object-right"
                         sizes="(max-width: 1024px) 100vw, 34vw"
                         style={{ objectFit: 'contain' }}
