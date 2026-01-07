@@ -82,6 +82,7 @@ export default function BlogPage() {
                                 src="/images/blog-left-3.jpg"
                                 alt="Surfer SEO vs Ahrefs"
                                 fill
+                                loading="lazy"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover"
                             />
@@ -109,6 +110,7 @@ export default function BlogPage() {
                                 src="/images/blog-right-2.png"
                                 alt="SEO Tools Comparison"
                                 fill
+                                loading="lazy"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 66vw"
                                 className="object-cover"
                             />
@@ -139,6 +141,7 @@ export default function BlogPage() {
                                 src="/images/blog-grid-1.jpg"
                                 alt="Audience Data Campaigns"
                                 fill
+                                loading="lazy"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover"
                             />
@@ -166,6 +169,7 @@ export default function BlogPage() {
                                 src="/images/blog-grid-2.jpg"
                                 alt="Segmentation Power"
                                 fill
+                                loading="lazy"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover"
                             />
@@ -193,6 +197,7 @@ export default function BlogPage() {
                                 src="/images/blog-grid-3.jpg"
                                 alt="Customer Retention"
                                 fill
+                                loading="lazy"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover"
                             />
@@ -309,6 +314,7 @@ export default function BlogPage() {
                             alt="Social Commerce Dashboard"
                             width={900}
                             height={600}
+                            loading="lazy"
                             className="w-full h-auto rounded-t-xl shadow-2xl"
                         />
                     </div>
