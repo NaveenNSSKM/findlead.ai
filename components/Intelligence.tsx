@@ -13,7 +13,7 @@ export default function Intelligence() {
                         {[
                             { icon: '/images/icon-1.png', title: 'Define Your Strategy First', desc: 'Our AI Agent acts as your Co-Pilot, refining your ICP before a single email is sent.', color: 'bg-red-100 text-red-600' },
                             { icon: '/images/icon-2.png', title: 'Precision Lead Scoring', desc: 'Every prospect is validated and ranked by our proprietary AI algorithm so you know exactly who to prioritize.', color: 'bg-blue-100 text-blue-600' },
-                            { icon: '/images/icon-3.png', title: 'Multi-Sender Health Monitoring', desc: 'Intelligently rotate between senders with real-time health indicators to maximize deliverability.', color: 'bg-green-100 text-green-600' },
+                            { icon: '/images/icon-3.png', title: 'AI Strategic Research Agent', desc: 'Your new research intern is an AI. It scans news and LinkedIn to find the 50 people actually ready to buy, ensuring every lead is a strategic fit.', color: 'bg-green-100 text-green-600' },
                             { icon: '/images/icon-4.png', title: 'Sentiment-Powered Inbox', desc: 'AI tags every reply as "Positive" or "Negative," so you can close deals while the bot filters the noise.', color: 'bg-purple-100 text-purple-600' }
                         ].map((item, i) => (
                             <li key={i} className="flex gap-6 group">

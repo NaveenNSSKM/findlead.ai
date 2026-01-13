@@ -42,8 +42,8 @@ export default function Capabilities() {
 
                     <div className="bg-white p-8 rounded-[2rem] border border-gray-100 shadow-soft hover:border-accent-primary transition-colors cursor-default flex flex-col justify-between">
                         <div>
-                            <h3 className="text-xl font-heading font-semibold mb-3 text-black">Smart Rotation Logic</h3>
-                            <p className="text-gray-500">Use &quot;Sticky Sender&quot; logic to ensure follow-ups always come from the same address for consistency.</p>
+                            <h3 className="text-xl font-heading font-semibold mb-3 text-black">Sentiment-Powered Unified Inbox</h3>
+                            <p className="text-gray-500">Close deals, not tabs. Our AI analyzes every reply and tags "Positive Interest," so you can focus 100% of your energy on closing your hottest leads.</p>
                         </div>
                         <div className="relative w-full h-[180px] mt-6 rounded-xl overflow-hidden">
                             <Image
