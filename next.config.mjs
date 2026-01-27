@@ -24,7 +24,7 @@ const nextConfig = {
 
   experimental: {
     optimizePackageImports: ['react', 'react-dom'],
-    optimizeCss: true,
+    optimizeCss: false,
   },
 
   async headers() {
