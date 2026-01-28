@@ -4,29 +4,36 @@ const plans = [
     price: "$199",
     highlight: false,
     features: [
+      "Solo Founders",
       "1 User Seat",
-      "100 Verified Leads / mo",
-      "8,000 Emails / mo",
-      "1,000 AI Agent Credits",
-      "AI Research Agent",
-      "Sentiment Inbox",
+      "100 Leads",
+      "8,000 Emails",
+      "1,000 Credits",
+      "Included",
+      "Included",
+      "  —",
+      "  —",
+      "Standard",
+
     ],
     cta: "Get Started",
   },
   {
-    name: "Growth",
+    name: "Growth (Best Value)",
     price: "$349",
     highlight: true,
     badge: "Best Value",
     features: [
+      "Small GTM Teams",
       "2 User Seats",
-      "500 Verified Leads / mo",
-      "20,000 Emails / mo",
-      "5,000 AI Agent Credits",
-      "AI Research Agent",
-      "Sentiment Inbox",
+      "500 Leads",
+      "20,000 Emails",
+      "5,000 Credits",
+      "Included",
+      "Included",
       "Remove Branding",
       "CRM Integrations",
+      "Standard",
     ],
     cta: "Claim Lifetime Deal",
   },
@@ -35,13 +42,14 @@ const plans = [
     price: "$899",
     highlight: false,
     features: [
+      "Lead Gen Agencies",
       "5 User Seats",
-      "1,500 Verified Leads / mo",
-      "60,000 Emails / mo",
-      "15,000 AI Agent Credits",
-      "AI Research Agent",
-      "Sentiment Inbox",
-      "White Label",
+      "1,500 Leads",
+      "60,000 Emails",
+      "15,000 Credits",
+      "Included",
+      "Included",
+      "Remove Branding",
       "API Access",
       "Priority Support",
     ],
@@ -49,14 +57,17 @@ const plans = [
   },
 ];
 
+
 export default function PricingTable() {
   return (
-    <section className="
-      min-h-screen
-      py-20 sm:py-24
-      px-5 sm:px-8 lg:px-12
-      bg-[#0B0B0F]
-    ">
+    <section
+      className="
+        min-h-screen
+        py-20 sm:py-24
+        px-5 sm:px-8 lg:px-12
+        bg-white
+      "
+    >
       <div
         className="
           grid gap-6 sm:gap-8
@@ -67,9 +78,9 @@ export default function PricingTable() {
           items-stretch
         "
       >
-        {plans.map((plan) => (
+        {plans.map((plan, planIndex) => (
           <div
-            key={plan.name}
+            key={`plan-${planIndex}`}
             className={`
               relative
               rounded-2xl
@@ -77,22 +88,28 @@ export default function PricingTable() {
               p-6 sm:p-8
               h-full
               flex flex-col
-              ${
-                plan.highlight
-                  ? "border-yellow-400 bg-yellow-400/10 lg:scale-105"
-                  : "border-white/10 bg-white/5"
+              shadow-lg
+              ${plan.highlight
+                ? "border-yellow-400 bg-[#111111] lg:scale-105"
+                : "border-gray-200 bg-[#0F0F14]"
+              }
+              ${planIndex === 2
+                ? "sm:col-span-2 sm:justify-self-center sm:w-[calc(50%-1rem)] lg:col-span-1 lg:w-full lg:justify-self-auto"
+                : ""
               }
             `}
           >
             {/* Badge */}
             {plan.badge && (
-              <span className="
-                absolute -top-4 left-1/2 -translate-x-1/2
-                bg-yellow-400 text-black
-                px-4 py-1
-                text-xs sm:text-sm
-                rounded-full font-semibold
-              ">
+              <span
+                className="
+                  absolute -top-4 left-1/2 -translate-x-1/2
+                  bg-yellow-400 text-black
+                  px-4 py-1
+                  text-xs sm:text-sm
+                  rounded-full font-semibold
+                "
+              >
                 {plan.badge}
               </span>
             )}
@@ -112,10 +129,27 @@ export default function PricingTable() {
 
             {/* Features */}
             <ul className="mt-6 space-y-3 text-sm sm:text-base text-gray-300 flex-grow">
-              {plan.features.map((feature) => (
-                <li key={feature} className="flex gap-2">
-                  <span className="text-yellow-400">✔</span>
-                  <span>{feature}</span>
+              {plan.features.map((feature, featureIndex) => (
+                <li
+                  key={`plan-${planIndex}-feature-${featureIndex}`}
+                  className="flex gap-2 items-center"
+                >
+                  <span
+                    className={
+                      feature === "—"
+                        ? "text-gray-500"
+                        : "text-yellow-400"
+                    }
+                  >
+                    {feature === "—" ? "—" : "✔"}
+                  </span>
+                  <span
+                    className={
+                      feature === "—" ? "text-gray-500" : ""
+                    }
+                  >
+                    {feature}
+                  </span>
                 </li>
               ))}
             </ul>
