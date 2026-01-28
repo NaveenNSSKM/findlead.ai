@@ -111,7 +111,7 @@ export default function Navbar() {
                                 <Link href="#" onClick={() => setIsMenuOpen(false)}>Product</Link>
                             </div>
                             <div className="border-b border-gray-100 pb-4">
-                                <Link href="#" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
+                                <Link href="/pricing" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
                             </div>
                             <div className="border-b border-gray-100 pb-4">
                                 <Link href="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link>
